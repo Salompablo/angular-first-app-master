@@ -1,0 +1,30 @@
+<p>other works!</p>
+
+<span>{{ name }}</span>
+
+<button (click)="onButtonClick()">Cambio!</button>
+<!-- Output () -->
+
+<p *ngIf="isViewFirst">
+  -- Izquierda
+</p>
+
+<p *ngIf="!isViewFirst">
+  -- Derecha
+</p>
+
+<ul class="list">
+  <li *ngFor="let item of items">
+    <span class="list-item">Fruta: {{ item }}</span>
+  </li>
+</ul>
+
+<hr>
+
+<ng-template [ngIf]="true"> <!-- Esta linea no va a renderizarse, no va a ocupar espacio -->
+  <div>
+    <p>Contion or Variable is true and draw on DOM</p>
+  </div>
+</ng-template>
+
+<hr>

@@ -1,0 +1,7 @@
+<p>patata works!</p>
+
+<ul class="list">
+  <li class="item" *ngFor="let item of months; let i = index">
+    <span [ngClass]="{'color-red': i === random}">Nº {{i}} - {{ item }}</span>
+  </li>
+</ul>
